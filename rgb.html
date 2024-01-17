@@ -7,13 +7,32 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div id="gomb">
-        <form action="/action_page.php">
-            <input type="button" value="Generálj egy új számot! " onclick="rgb()">
-        </form>
-    </div>
 
-    <div id="dot"></div>
+    <header>
+        <div class="innerHeader">
+            <nav>
+                <a href="#" class="title">Title</a>
+                <ul class="anchourContent">
+                    <li><a class="navAnchour" href="./random.html">Random szám</a></li>
+                    <li><a class="navAnchour" href="./rgb.html">Random szín</a></li>
+                    <li><a class="navAnchour" href="./szamolo.html">Számláló</a></li>
+                    <li><a class="navAnchour" href="./szorzotabla.html">Szorzótábla</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <div id="gomb">
+            <form action="/action_page.php">
+                <input type="button" value="Generálj egy új számot! " onclick="rgb()">
+            </form>
+        </div>
+    
+        <div id="dot"></div>
+    </main>
+
     <script>
         function rgb() {
             let r = Math.random() * 255;

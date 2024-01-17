@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Félév</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="szamol.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/szamol.js"></script>
 </head>
 <body>
-    <button onclick="increment()">Adj hozzá 1-et</button><br>
-    <input id="myNumber" type="number" value="0">
+
+    <header>
+        <div class="innerHeader">
+            <nav>
+                <a href="#" class="title">Title</a>
+                <ul class="anchourContent">
+                    <li><a class="navAnchour" href="./random.html">Random szám</a></li>
+                    <li><a class="navAnchour" href="./rgb.html">Random szín</a></li>
+                    <li><a class="navAnchour" href="./szamolo.html">Számláló</a></li>
+                    <li><a class="navAnchour" href="./szorzotabla.html">Szorzótábla</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <button onclick="increment()">Adj hozzá 1-et</button><br>
+        <input id="myNumber" type="number" value="0">
+
+    </main>
+
 </body>
 </html>

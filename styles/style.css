@@ -125,3 +125,21 @@ nav {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #ff3960;
 }
+
+/* RGB Kör */
+
+#dot {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: auto;
+    border: solid 2px black;
+
+  }
+
+#gomb {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}

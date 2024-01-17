@@ -1,0 +1,127 @@
+*, *::before, *::after {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  background-color: crimson;
+  border: 4px dashed #b30024;
+  color: white;
+  border-radius: 5px;
+  z-index: 150;
+}
+
+.innerHeader {
+  position: relative;
+}
+
+header::before {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i.stack.imgur.com/wLdVc.png");
+  opacity: 30%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: bold;
+}
+
+.title {
+  color: #eeeeee;
+  text-decoration: none;
+  font-size: 32px;
+  text-transform: capitalize;
+  transition: 0.3s;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  background-color: #92001d;
+  border: 2px solid #8d001c;
+  z-index: 32;
+}
+
+.anchourContent {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 32;
+}
+
+.anchourContent li{
+  list-style-type: none;
+}
+
+.navAnchour {
+  color: #eeeeee;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 2px solid #8d001c;
+  background-color: #92001d;
+}
+
+.title:hover, .navAnchour:hover {
+  color: white;
+  background-color: #ff2752;
+}
+
+.content {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 190vh;
+  background-color: #ffd7df;
+  border: 2px solid #b30024;
+  color: white;
+  border-radius: 5px;
+}
+
+@media (width < 350px) {
+  
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ffd7df;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: crimson;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff3960;
+}

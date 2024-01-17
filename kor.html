@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kör</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gomb">
+        <form action="/action_page.php">
+            <input type="button" value="Generálj egy új számot! " onclick="rgb()">
+        </form>
+    </div>
+
+    <div id="dot"></div>
+    <script>
+        function rgb() {
+            let r = Math.random() * 255;
+            let g = Math.random() * 255;
+            let b = Math.random() * 255;
+            document.getElementById('dot').style.backgroundColor = `rgb(${r},${g},${b})`;
+        }
+    </script>
+</body>
+</html>
